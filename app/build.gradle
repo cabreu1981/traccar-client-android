@@ -13,20 +13,20 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('../../android.keystore')
-            keyAlias 'tananaev'
-            storePassword ''
-            keyPassword ''
+            storeFile file('../../traccar-client-android/bridge lbs.keystore')
+            keyAlias 'bridgelbskey'
+            storePassword 'carlos1981'
+            keyPassword 'carlos1981'
         }
     }
 
     productFlavors {
         regular {
-            applicationId "org.traccar.client"
+            applicationId "org.bridgelbs.client"
             buildConfigField "boolean", "HIDDEN_APP", "false"
         }
         hidden {
-            applicationId "org.traccar.client.hidden"
+            applicationId "org.bridgelbs.client.hidden"
             buildConfigField "boolean", "HIDDEN_APP", "true"
         }
     }
@@ -45,8 +45,12 @@ dependencies {
 }
 
 task requestPasswords << {
-    android.signingConfigs.release.storePassword = new String(System.console().readPassword('\nStore password: '))
-    android.signingConfigs.release.keyPassword = new String(System.console().readPassword('Key password: '))
+
+    android.signingConfigs.release.storePassword = 'carlos1981'
+    android.signingConfigs.release.keyPassword = 'carlos1981'
+
+    /*android.signingConfigs.release.storePassword = new String(System.console().readPassword('\n Store password: '))
+    android.signingConfigs.release.keyPassword = new String(System.console().readPassword('Key password: '))*/
 }
 
 tasks.whenTaskAdded { theTask ->

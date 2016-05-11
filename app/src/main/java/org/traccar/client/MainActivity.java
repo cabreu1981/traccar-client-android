@@ -18,6 +18,7 @@ package org.traccar.client;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
@@ -30,6 +31,8 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.preference.TwoStatePreference;
+import android.provider.Settings;
+import android.telephony.TelephonyManager;
 import android.util.Patterns;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -206,11 +209,44 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         return super.onOptionsItemSelected(item);
     }
 
+
+    String getDeviceID(TelephonyManager phonyManager){
+
+        String id = phonyManager.getDeviceId();
+        if (id == null){
+            id = "not available";
+        }
+
+        int phoneType = phonyManager.getPhoneType();
+        switch(phoneType){
+            case TelephonyManager.PHONE_TYPE_NONE:
+                return "" + id;
+
+            case TelephonyManager.PHONE_TYPE_GSM:
+                return "" + id;
+
+            case TelephonyManager.PHONE_TYPE_CDMA:
+                return "" + id;
+
+ /*
+  *  for API Level 11 or above
+  *  case TelephonyManager.PHONE_TYPE_SIP:
+  *   return "SIP";
+  */
+
+            default:
+                return "" + id;
+        }
+
+    }
+
     private void initPreferences() {
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         if (!sharedPreferences.contains(KEY_DEVICE)) {
-            String id = String.valueOf(new Random().nextInt(900000) + 100000);
+            TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+            String id =(getDeviceID(telephonyManager));
+            //String id = String.valueOf(new Random().nextInt(900000) + 100000);
             sharedPreferences.edit().putString(KEY_DEVICE, id).commit();
             ((EditTextPreference) findPreference(KEY_DEVICE)).setText(id);
         }

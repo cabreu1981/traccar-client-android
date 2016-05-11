@@ -3,6 +3,8 @@
 
     <string name="app_name">Traccar klient</string>
     <string name="app_logo">Traccar</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Indentificere Enhed</string>
     <string name="settings_address_title">Server adresse</string>
@@ -29,6 +31,7 @@
     <string name="menu_status">Status</string>
     <string name="menu_about">Om</string>
     <string name="menu_clear">Tilbage</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
 
     <string name="about_description">Real tid`s GPS tracker for Android enheder. Kompatibel med Traccar Server og andre tracking systemer.</string>
     <string name="about_license">Denne application er en fri og open source, source koden er licenseret under Apache License Version 2.0 og tilgængelig på GitHub.</string>
@@ -39,5 +42,10 @@
     <string name="status_send_fail">Send fejl</string>
     <string name="status_location_update">Placering opdateret</string>
     <string name="status_connectivity_change">Connectivity forandring</string>
+
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
+
+
 
 </resources>

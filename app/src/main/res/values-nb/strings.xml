@@ -3,6 +3,8 @@
 
     <string name="app_name">Traccar Klient</string>
     <string name="app_logo">Traccar</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Enhetsidentifikasjon</string>
     <string name="settings_address_title">Tjeneradresse</string>
@@ -29,6 +31,7 @@
     <string name="menu_status">Status</string>
     <string name="menu_about">Om</string>
     <string name="menu_clear">Tøm</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
     
     <string name="about_description">Sanntids GPS-sporing for Android-enheter. Kompatible med Traccar Server og andre sporingssystemer.</string>
     <string name="about_license">Dette programmet har fri og åpen kildekode; kildekoden er lisensiert under Apache License Version 2.0 og er tilgjengelig på GitHub.</string>
@@ -39,5 +42,9 @@
     <string name="status_send_fail">Sending mislyktes</string>
     <string name="status_location_update">Plassering oppdatert</string>
     <string name="status_connectivity_change">Tilkobling forandret</string>
+
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
+
 
 </resources>

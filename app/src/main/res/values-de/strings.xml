@@ -3,6 +3,8 @@
 
     <string name="app_name">Traccar für Android</string>
     <string name="app_logo">Traccar</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Gerätekennung</string>
     <string name="settings_address_title">Serveradresse</string>
@@ -29,6 +31,7 @@
     <string name="menu_status">Status</string>
     <string name="menu_about">Über</string>
     <string name="menu_clear">Leeren</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
     
     <string name="about_description">Echtzeit GPS Ortung für Android Geräte. Kompatibel mit Traccar Server und anderen Ortungsservern.</string>
     <string name="about_license">Dieses Programm ist frei und Open Source. Es ist unter Apache Lizenz Version 2.0 lizenziert und ist auf GitHub verfügbar.</string>
@@ -39,5 +42,10 @@
     <string name="status_send_fail">Übertragung fehlerhaft</string>
     <string name="status_location_update">Positionsupdate</string>
     <string name="status_connectivity_change">Anschlusswechsel</string>
+
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
+
+
 
 </resources>

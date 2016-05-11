@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Traccar Client</string>
-    <string name="app_logo">Traccar</string>
-    <string name="shortcut_start">Traccar - Start</string>
-    <string name="shortcut_stop">Traccar - Stop</string>
+    <string name="app_name">Bridge LBS Client</string>
+    <string name="app_logo">Bridge LBS</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Device identifier</string>
     <string name="settings_address_title">Server address</string>
@@ -33,9 +33,9 @@
     <string name="menu_shortcuts">Add shortcuts</string>
     <string name="menu_clear">Clear</string>
     
-    <string name="about_description">Real time GPS tracker for Android devices. Compatible with Traccar Server and other tracking systems.</string>
+    <string name="about_description">Real time GPS tracker for Android devices.</string>
     <string name="about_license">This application is free and open source, source code is licensed under Apache License Version 2.0 and available on GitHub.</string>
-    <string name="about_web">For more information visit\nwww.traccar.org/client</string>
+    <string name="about_web">For more information visit\n bridgelbs.com</string>
 
     <string name="status_service_create">Service created</string>
     <string name="status_service_destroy">Service destroyed</string>
@@ -44,6 +44,6 @@
     <string name="status_connectivity_change">Connectivity change</string>
 
     <string name="hidden_app_name">Device Settings</string>
-    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (TRACCAR).</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
 
 </resources>

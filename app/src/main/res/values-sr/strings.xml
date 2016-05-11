@@ -3,6 +3,8 @@
 
     <string name="app_name">Traccar klijent</string>
     <string name="app_logo">Traccar</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Identifikator uređaja</string>
     <string name="settings_address_title">Adresa servera</string>
@@ -29,6 +31,7 @@
     <string name="menu_status">Status</string>
     <string name="menu_about">O klijentu</string>
     <string name="menu_clear">Očisti</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
 
     <string name="about_description">GPS tracker za Android telefone. GPS satelit kompatibilno.</string>
     <string name="about_license">Ova aplikacija je besplatna i open source,izvorni kod je licenciran pod Apache License Version 2.0 i dostupan na GitHub</string>
@@ -39,5 +42,9 @@
     <string name="status_send_fail">Slanje neuspešno</string>
     <string name="status_location_update">Ažuriranje lokacije</string>
     <string name="status_connectivity_change">Promenjena konekcija</string>
+
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
+
 
 </resources>

@@ -3,6 +3,8 @@
 
     <string name="app_name">Traccar Клиент</string>
     <string name="app_logo">Traccar</string>
+    <string name="shortcut_start">Bridge LBS - Start</string>
+    <string name="shortcut_stop">Bridge LBS - Stop</string>
 
     <string name="settings_id_title">Идентификатор устройства</string>
     <string name="settings_address_title">Адрес сервера</string>
@@ -29,6 +31,7 @@
     <string name="menu_status">Состояние</string>
     <string name="menu_about">О программе</string>
     <string name="menu_clear">Очистить</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
     
     <string name="about_description">Трекер для Android устройств. Совместим с Traccar сервером и другими мониторинговыми системами.</string>
     <string name="about_license">Это приложение распростаняется бесплатно, исходный код распростаняется по лицензии Apache License Version 2.0 и доступен на GitHub.</string>
@@ -39,5 +42,8 @@
     <string name="status_send_fail">Ошибка отправки</string>
     <string name="status_location_update">Обновление местоположения</string>
     <string name="status_connectivity_change">Изменение подключения</string>
+
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (BridgeLBS).</string>
 
 </resources>
